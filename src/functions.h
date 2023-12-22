@@ -9,5 +9,6 @@ int sum(int a, int b);
 
 int screan_area(int height, int width);
 
-
 int contrast(std::vector<int> v);
+
+int contrast_2(std::vector<int> v);

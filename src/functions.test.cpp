@@ -32,9 +32,29 @@ TEST_CASE("Площадь прямоугольника ошибочная")
 }
 
 
-/*
-TEST_CASE("contrast")
+
+TEST_CASE("Поиск разности max и min элемента динамического массива")
 {
-    CHECK_THROWS(contrast({7, 15 ,2, 45, 24}) == 43);
+    CHECK(contrast({7, 15 ,2, 45, 24}) == 43);
+    CHECK(contrast({1, 2, 3, 4, 5, 6, 7, 8}) == 7);
+    CHECK(contrast({40, 10, 5, 7, 9}) == 35);
+
+    CHECK(contrast({-2, 5, 10}) == 12);
+    CHECK(contrast({10, 5, -2}) == 12);
+
+    CHECK(contrast({0, 5, 10}) == 10);
+
 }
-*/
+
+TEST_CASE("Поиск разности max и min элемента динамического массива (способ 2)")
+{
+    CHECK(contrast_2({7, 15 ,2, 45, 24}) == 43);
+    CHECK(contrast_2({1, 2, 3, 4, 5, 6, 7, 8}) == 7);
+    CHECK(contrast_2({40, 10, 5, 7, 9}) == 35);
+
+    CHECK(contrast_2({-2, 5, 10}) == 12);
+    CHECK(contrast_2({10, 5, -2}) == 12);
+
+    CHECK(contrast_2({0, 5, 10}) == 10);
+
+}
